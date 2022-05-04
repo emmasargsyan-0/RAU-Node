@@ -1,0 +1,1 @@
+import express from 'express'const app = express()const PORT = 5000app.get('/success', (req, res) => {    res.status(200).send({        success: 'true'    })})app.get('/invalid', (req, res) => {   // code    res.status(404).send("Not Found")})app.listen(PORT, () => {    console.log(`Server running on http://localhost:${PORT}`)})
